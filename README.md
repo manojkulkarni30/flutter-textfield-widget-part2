@@ -1,16 +1,27 @@
 # flutter_texteditingcontroller_demo
 
-A new Flutter project.
+A small Flutter demo that shows how to manage TextField text using TextEditingController.
 
-## Getting Started
+## Overview
 
-This project is a starting point for a Flutter application.
+This repository demonstrates common patterns for:
 
-A few resources to get you started if this is your first Flutter project:
+- creating and disposing TextEditingController instances,
+- programmatically reading and writing text,
+- listening to controller changes,
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Video tutorial
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Video: [TextField Widget In Flutter - TextEditingController Guide #2](https://youtu.be/CXUew1hIXb8)
+- Channel: [Manoj Kulkarni](https://www.youtube.com/@ManojKulkarni30)
+
+## Documentation
+
+- TextField widget (material): https://api.flutter.dev/flutter/material/TextField-class.html
+- TextEditingController: https://api.flutter.dev/flutter/widgets/TextEditingController-class.html
+
+## Quick tips
+
+- Always dispose controllers in State.dispose(): controller.dispose()
+- Use controller.text to read/write current value.
+- Use controller.addListener(...) to react to text changes.
